@@ -1,31 +1,30 @@
-# Programmeren - 3 - Frontend Framework (Yarnova)
-## Van de Weyer Yarno
+# Yarnova Compiler + Language
 
 
-### Commando's
+### Commands
 
 ```bash
-cd yv-compiler # vanuit root folder van project
+cd yv-compiler # from root
 npm run build
 
-cd ../yv-loader # vanuit compiler
+cd ../yv-loader # from compiler project
 npm run build
-npm run test # voor testen
+npm run test # for tests
 
 
-cd ../yarnova # vanuit loader
+cd ../yarnova # from loader
 npm run build
 
-cd ../Demo # vanuit loader of yarnova
+cd ../Demo # from loader or from yarnova
 npm run build
-npm run start # voor demo
+npm run start # for demo
 
-# vanuit compiler project
+# from compiler project
 java -jar ANTLR\ 4.13.1\ complete.jar -Dlanguage=TypeScript -visitor -no-listener  yv-compiler/src/antlr/Yarnova.g4
 ```
 
-### Structuur
-Declaratie van variabelen
+### Structure
+Variable declaration
 ```
 let aNumber: number = 1;
 let alsoANumber = 1;
@@ -39,7 +38,7 @@ let alsoABoolean = true;
 let vari;
 ```
 
-Declaratie van functies
+Function declaration
 ```
 func aFunction(a: number) {
     let b: number = a;
@@ -48,7 +47,7 @@ func aFunction(a: number) {
 
 aFunction(1);
 ```
-Declaratie van functies met meerdere parameters
+Declaration of function with multiple paramaters
 ```
 func aFunctionWithMultipleParams(a: number, b: string) {
     print(a);
@@ -57,13 +56,13 @@ func aFunctionWithMultipleParams(a: number, b: string) {
 
 aFunctionWithMultipleParams(1, "Hello");
 ```
-Declaratie van lambda's
+Lambda declaration
 ```
 const testLambda = () => {
     print("hello");
 }
 ```
-Geneste JSX
+Nested JSX
 ```
 func jsxTest(): string {
     return <div>a<h1><p>ptag</p>h1tag</h1></div>;
@@ -87,7 +86,7 @@ print("HelloWorld");
 console.log("HelloWorld");
 ```
 
-Array declaratie
+Array declaration
 ```
 arr cars = ["Saab", "Volvo", "BMW"];
 ```
