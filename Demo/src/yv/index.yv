@@ -1,0 +1,45 @@
+let aNumber: number = 1;
+let alsoANumber = 1;
+
+let aString: string = "Hello";
+let alsoAString = "Hello";
+
+let aBoolean: boolean = true;
+let alsoABoolean = true;
+
+let vari;
+
+func aFunction(a: number) {
+    let b: number = a;
+    print(b);
+}
+
+aFunction(1);
+
+const testLambda = () => {
+    print("hello");
+}
+
+func jsxTest(): string {
+    return <div>aDiv<h1><p>ptag</p>h1tag</h1></div>;
+}
+Yarnova.render(jsxTest())
+
+func jsxTestStyle(): string {
+    return <div style={background-color:red}>aDivColored<h1 style={background-color:blue}><p style={background-color:green}>ptagColored</p>h1tagColored</h1></div>;
+}
+Yarnova.render(jsxTestStyle())
+
+print("HelloWorld");
+console.log("HelloWorld");
+
+func aFunctionWithMultipleParams(a, b) {
+    print(a);
+    print(b);
+}
+
+aFunctionWithMultipleParams(1, "Hello");
+
+arr cars = ["Saab", "Volvo", "BMW"];
+
+
